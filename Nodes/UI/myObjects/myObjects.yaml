@@ -1,0 +1,17 @@
+Name: myObjects
+Type: FolderType
+Children:
+- Name: myTextBox
+  Id: g=beed33181842203f2976a9a3c55b7019
+  Supertype: TextBox
+  ReferenceType: HasComponent
+  Children:
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 180.0

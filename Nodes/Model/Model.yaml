@@ -1,0 +1,180 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: VarBool
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: VarInt
+  Id: g=3d3e2626ea64157bcdf4cd1f881c69a8
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: VarArrayInt
+  Id: g=a34ee477c361f79fa881e03e5c6fb46b
+  Type: BaseDataVariableType
+  DataType: Int16
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+  Value: [0,11,22,30,0,0,0,0,0,0]
+- Name: VarArrayIntBD
+  Type: BaseDataVariableType
+  DataType: Int16
+  ValueRank: 2
+  ArrayDimensions: [10,10]
+  Value: 
+   {
+    "Type": 4,
+    "Dimensions": [10,10],
+    "Body": [
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0,
+     0,0,0,0,0,0,0,0,0,0
+    ]
+   }
+- Name: LimMIn
+  Id: g=f0c286a45dc05ee5b03cfb7587ee9145
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: 
+     {
+      "TypeId": {
+       "Id": 887
+      },
+      "Body": {
+       "namespaceUri": "",
+       "unitId": 0,
+       "displayName": {
+        "NamespaceIndex": -1,
+        "LocaleId": "",
+        "Text": ""
+       },
+       "description": {
+        "NamespaceIndex": -1,
+        "LocaleId": "",
+        "Text": ""
+       }
+      }
+     }
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: LimMax
+  Id: g=39d8708f05c98bf3f85bfc8aac3882e5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 300
+- Class: DataType
+  Name: Enumeration1
+  Id: g=34364c2262a5d1df1f20a7b347574cf0
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enumeration1",
+    "DataType": {
+     "IdType": 2,
+     "Id": "34364c2262a5d1df1f20a7b347574cf0",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "OFF"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ON"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "FAULT"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"OFF"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"ON"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"FAULT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: VarIndex
+  Id: g=39c15e3631cb032683b7d93eb9f5c47b
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: VarPLC
+  Id: g=b018d9c6d82084c7b54feecd567fd349
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: ObjectMotore
+  Id: g=d6925feed51b6ab00ae08487c59cb4f7
+  Supertype: BaseObjectType
+  Children:
+  - Name: speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: acceleration
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: ObjectMotore1
+  Id: g=9120c550ed586cbbb5da626f996e2244
+  Type: ObjectMotore
+  Children:
+  - Name: speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 11
+  - Name: acceleration
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 33
+- Name: ObjectMotore2
+  Id: g=6c89149e268035021f80d35ace7e6ae3
+  Type: ObjectMotore
+  Children:
+  - Name: speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+  - Name: acceleration
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 70

@@ -1,0 +1,156 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: DATETIMESTRUCT
+  Id: g=c677fbf76b39da5c9106c9fccae81b38
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DATETIMESTRUCT",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c677fbf76b39da5c9106c9fccae81b38",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Day",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Hour",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Microsecond",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Minute",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Month",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Second",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Year",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DATETIMESTRUCT"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Motor
+  Id: g=7a211b5d30398278edcd27d2e2c81f57
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Motor",
+    "DataType": {
+     "IdType": 2,
+     "Id": "7a211b5d30398278edcd27d2e2c81f57",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "CmdOffOn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Power",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SetSpeed",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Speed",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Motor"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: TankUDT
+  Id: g=651353e79d1ae362c6d06d8d311f35ce
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "TankUDT",
+    "DataType": {
+     "IdType": 2,
+     "Id": "651353e79d1ae362c6d06d8d311f35ce",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Level",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SetPoint",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ValveInCmd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ValveInStatus",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ValveOutCmd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ValveOutStatus",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"TankUDT"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
