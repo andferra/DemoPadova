@@ -1525,12 +1525,12 @@ Children:
       DataType: LocalizedText
       ModellingRule: Optional
       Value: {"LocaleId":"en-US","Text":"Button5"}
-    - Name: LeftMargin
+    - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 410.0
-    - Name: TopMargin
+      Value: 100.0
+    - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
@@ -1539,7 +1539,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       ModellingRule: Optional
-      Value: "#0000ff"
+      Value: "#ff0000"
 - Name: Screen2
   Id: g=d7f39414b14fa2a7e494b6337c3f0a20
   Supertype: Screen
